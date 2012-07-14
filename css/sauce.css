@@ -1,0 +1,345 @@
+html, body{
+	background: #efefef url(../images/fancy_deboss.png) repeat;
+}
+
+ul, li{
+	margin: 0;
+	padding: 0;
+}
+	
+	ul{
+		clear: both;
+	}
+	
+	li{
+		list-style: none;
+	}
+
+a{
+	color: #fff;
+}	
+
+.rounded{
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0px 1px 2px #bbb;
+	-moz-box-shadow: 0px 1px 2px #bbb;
+	box-shadow: 0px 1px 2px #bbb;
+}
+
+
+.button{
+	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	font-size: 0.85em;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fafafa;
+	letter-spacing: 1px;
+	line-height: 1.4em;
+	/*min-width: 50px;*/
+	margin: 3px;
+	float: right;
+	
+	padding: 3px;
+/*	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	
+	
+	
+	background-color: #6E6E71;
+	border: 1px solid #fff;
+*/
+	}
+
+	.button:hover, .button:focus{
+		color: #fff;
+	}
+
+
+.titlebar{
+	margin: -10px;
+	padding: 10px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #efefef;
+	clear: both;
+}
+	
+	.titlebar{
+		margin-bottom: 20px;
+	}
+	
+	.titlebar h3{
+		font-family: Cuprum, Arial, Helvetica, sans-serif;
+		border-bottom: 1px solid #ededed;
+		display: inline-block;
+		margin-bottom: 0;
+	}
+	
+	.titlebar a.button{
+		float: right;
+		margin-top: -2px;
+	}
+
+.completed>span.desc{
+	text-decoration: line-through;
+}
+
+	
+#wrapper{
+	font-family: "Droid Sans", Arial, Helvetica, sans-serif;
+	margin: 0 auto;
+	width: 500px;
+}
+
+#header_pane{
+	display: block;
+	margin: 2em 0 0 7px;
+}
+
+	h1#logo{
+		font-family: Cuprum, Arial, Helvetica, sans-serif;
+		
+		letter-spacing: -2px;
+		margin-bottom: 0;
+	}
+	
+	span#tagline{
+		font-size: 0.90em;
+		font-style: italic;
+		color: #222;
+	}
+
+#info_pane{
+	display: none;
+
+	margin-top: 1em;
+	background: #fafafa;
+	border: 1px solid #e1e1e1;
+	padding: 15px;
+}	
+	
+#timer_pane{
+	margin-top: 1em;
+	background: #fafafa;
+	border: 1px solid #e1e1e1;
+	padding: 15px;
+}
+
+	#timer{
+		float: left;
+		width: 250px;
+	}
+	
+		#timer span{
+			margin: 0;
+			padding: 0;
+			font-family: 'Anton', 'LeagueGothic' , Cuprum, Arial, Helvetica, sans-serif;
+			font-size: 10em;
+			line-height: 0.75em;
+			text-shadow: 1px 1px 1px #555;
+		}
+		
+	#controls{
+		float: right;
+		width: 100px;
+	}
+	
+		#controls a{
+			clear: both;
+			float: right;
+		}
+		
+			#start{
+				
+			}
+			
+				#start:hover{
+					
+				}
+			
+			#reset{
+
+			}
+			
+			#settings{
+				margin-top: 1.3em;
+			}
+
+#settings_pane{
+	margin-top: 1em;
+	background: #fafafa;
+	border: 1px solid #e1e1e1;
+	padding: 15px;
+}			
+	
+	#settings_pane form a.button{
+		float: right;
+	}
+
+	#timerSetup input{
+		border: 0;
+	}
+	
+	#timerSetup input[type='text']{
+		font-family: "Droid Sans", Arial, Helvetica, sans-serif;
+		text-align: center;
+		border-bottom: 1px dotted #aaa;
+	}
+	
+	#timerSetup p{
+		margin-bottom: 0;
+	}
+		
+#tasklist_pane{
+	margin-top: 1em;
+	background: #fafafa;
+	border: 1px solid #e1e1e1;
+	padding: 15px;
+}
+
+	.tasklist_header{
+		margin: -5px;
+		padding: 5px;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+		color: #E42A2B;
+		font-family: Cuprum, Arial, Helvetica, sans-serif;
+		font-size: 1.2em;
+		margin-bottom: 0.5em;
+		
+		background-color: #fff;
+		clear: both;
+		
+		cursor: pointer;
+	}
+
+	p.tasklist_date{
+		float: left;
+		line-height: 2em;
+		margin-bottom: 0;
+	}
+	
+	p.tasklist_info{
+		text-align: right;
+		float: right;
+		margin-bottom: 0;
+		line-height: 1;
+	}
+
+	p.tasklist_info span.number{
+			font-size: 2em;
+			color: #eee;
+			font-weight: bold;
+		}
+	
+	.tasklist_header:hover p.tasklist_info span.number{
+		color: #bbb;
+	}
+	
+	ul.tasks{
+		margin-bottom: 2.5em;
+	}
+	
+	li.task{
+		border-bottom: 1px solid #ededed;
+		padding: 6px 0 6px 0;
+		display: block;
+	}
+	
+		li.task:nth-child(even){
+			background-color: #f7f7f7;
+		}
+	
+		li.task:hover .desc{
+			color: #12A2FE;
+		}
+	
+		li.task .desc{
+			width: 330px;
+			float: left;
+			color: #4d4d4d;
+		}		
+		
+#footer{
+	display: none;
+
+	border-top: 1px solid #ddd;
+	margin: 3em 0 1em 0;
+	padding-top: 0.5em;
+}
+
+	#footer a{
+		/*color: #cdcdcd;*/
+		text-decoration: none;
+		padding: 5px;
+	}
+	
+	/* ZURB */
+	.awesome{
+		background: #222 url(../images/alert-overlay.png) repeat-x;
+		display: inline-block;
+		padding: 5px 10px;
+		color: #f1f1f1;
+		text-decoration: none;
+		/*font-weight: bold;*/
+		line-height: 1.1;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		/*-moz-box-shadow: 0 1px 3px #999;
+		-webkit-box-shadow: 0 1px 3px #999;
+		text-shadow: 0 -1px 1px #222;
+		border-bottom: 1px solid #222;*/
+		position: relative;
+		cursor: pointer;
+		
+		-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+		-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+		text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+		border-bottom: 1px solid rgba(0,0,0,0.25);
+
+	}
+
+	/* Sizes ---------- */
+		.small.awesome {
+			font-size: 11px;
+		}
+		.medium.awesome {
+			font-size: 13px;
+		}
+		.large.awesome {
+			font-size: 14px;
+			padding: 8px 14px 9px;
+		}
+	
+	/* Colors ---------- */
+		.blue.awesome {
+			background-color: #2daebf;
+		}
+		.red.awesome {
+			background-color: #e33100;
+		}
+		.magenta.awesome {
+			background-color: #a9014b;
+		}
+		.orange.awesome {
+			background-color: #ff5c00;
+		}
+		.yellow.awesome {
+			background-color: #ffb515;
+		}
+		.green.awesome {
+			background-color: #96D224;
+		}
+
+	/* Hover ---------- */
+	.awesome:hover{
+		color: #fff;
+	}
+
+	

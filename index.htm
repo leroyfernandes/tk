@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TasKetchup - Tomato-powered Task Timer</title>
+		<link href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold|Cuprum" rel="stylesheet" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+		
+		<meta charset="utf-8"> 
+		<meta name="description" content="TomatoTimer is a Pomodoro Timer Web Application"> 
+		<meta name="keywords" content="pomodoro technique, tomato timer, pomodoro timer, online pomodoro timer, software timer, pomodoro software timer, productivity tools, gtd, getting things done, productivity, digital timer, concentration techniques, pomodoro resources, pomodoro software"> 
+		<link rel="shortcut icon" href="favicon.ico" /> 
+		
+		<link href="css/screen.css" rel="stylesheet" />
+		<link href="css/sauce_2.css" rel="stylesheet" />
+		
+		<script src="js/jquery.js"></script>
+		<script src="js/lwt.cdTimer.mod.js"></script>
+		<script src="js/ket.js"></script>
+		
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			<div id="header_pane">
+				<h1 id="logo">TasK<span style="color: #E81E25; margin-left:-12px;">Ketchup</span></h1>
+				<span id="tagline">Tomato-powered Task Timer</span>
+			</div>
+			
+			<div id="info_pane" class="rounded">
+				<div class="titlebar">
+					<h3>Hi! Welcome to TasKetchup...</h3>
+					<a id="close" class="button awesome" href="">Close</a>
+				</div>
+				<p>a nifty little <strong>task manager / timer</strong> hybrid, based on the brilliant <a href="">Pomodoro Technique</a> that aims to simplify your task/time management woes.</p>
+				<p>
+				To really enjoy TasKetchup, you will need to have a <a href="">HTML5 compatible browser</a>.
+				</p>
+				<p>
+					If you have any feedback or ideas, I'm are all ears at <strong>hello [AT] tasketchup.com</strong>
+				</p>
+				<p>	
+					
+				</p>
+				<div class="clear"></div>
+			</div>
+			
+			
+		<div id="timer_container">
+			<div id="timer_pane" class="rounded">
+				<div id="inprogress">work</div>
+				<div id="timer">
+					<!-- <span>28</span><span id="separator">:</span><span>07</span> -->
+					
+				</div>
+				<div id="controls">
+					<a id="start" class="button green awesome" href="#">Start</a>
+					<a id="reset" class="button awesome" href="#">Reset</a>
+					<a id="settings" class="button blue awesome" href="#">Settings</a>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+			<div id="settings_pane" class="rounded">
+				<div class="titlebar">
+					<h3>Settings</h3>
+				</div>
+				<div id="settingsForm">
+					<form id="timerSetup" name="timerSetup" >
+						<p>
+						<strong>Work</strong> for <input type="text" id="workMins" name="workMins" size="3" maxLength="2" /> minutes. Followed by a <strong>short break</strong> of <input type="text" id="sbreakMins" name="sbreakMins" size="3" maxLength="2" /> minutes. 
+						</p>
+						
+						<p>
+						Repeat this <input type="text" id="cycles" name="cycles" size="3" maxLength="1" /> times. Then a <strong>long break</strong> of <input type="text" id="lbreakMins" name="lbreakMins" size="3" maxLength="2" /> minutes.
+						</p>
+						<br />
+						<input id="btnCancel" type="button" class="button awesome" value="Cancel" />
+						<input id="btnSubmit" type="button" class="button awesome" value="Save" />
+						<!-- <a class="button awesome" href="">Save</a>
+						<a class="button awesome" href="">Cancel</a> -->
+					</form>
+					
+					<div class="clear"></div>
+				</div>
+				
+			</div>
+			
+			<div id="ads">
+			
+			</div>
+			
+			<div id="footer">
+				<a class="button orange awesome" href="leroyfernandes.com" target="blank">leroyfernandes.com</a>
+			</div>
+		</div>
+		<div id="donate">
+		</div>
+	</body>
+</html>
