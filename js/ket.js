@@ -1,4 +1,5 @@
 // Initiate Countdown
+
 jQuery(document).ready(function() {
 	
 	
@@ -14,6 +15,32 @@ jQuery(document).ready(function() {
 		});
 	
 	$('#reset').click(function(){
+		console.log('reset clicked');
+		console.log('nowRunning: '+tkTimer.nowRunning);
+		
+		switch(tkTimer.nowRunning){
+			case 1: // work
+				console.log("--updateCountDownConfig work in");
+				tkTimer.countdownConfig.targetOffset.min = tkTimer.workMins;
+				break;
+				
+			case 2: // sbreak
+				console.log("--updateCountDownConfig sbreak in");
+				tkTimer.countdownConfig.targetOffset.min = tkTimer.sbreakMins;
+				break;
+				
+			case 3: // lbreak
+				console.log("--updateCountDownConfig lbreak in");
+				tkTimer.countdownConfig.targetOffset.min = tkTimer.lbreakMins;
+				break;
+			
+			default: 
+				console.log("--updateCountDownConfig default in");
+				tkTimer.countdownConfig.targetOffset.min = tkTimer.workMins;
+				break;
+		};
+		
+		$.setCountDown( tkTimer.countdownConfig );
 		
 	});
 	
@@ -44,16 +71,16 @@ jQuery(document).ready(function() {
 	});
 	
 	$('input').click(function(){
-		console.log($(this).attr('id'));
+		console.log(':-'+$(this).attr('id'));
 	});
 	
 	$('a').click(function(){
-		console.log($(this).attr('id'));
+		console.log(':-'+$(this).attr('id'));
 	});
 	
 });
 
-	
+
 var tkTimer = {
 	"workMins" : 25,
 	"sbreakMins" : 5,
@@ -225,7 +252,6 @@ var tkTimer = {
 		
 	
 };/* tkTimer END */
-	
 
 
 	/* Show/Hide Settings panel */
